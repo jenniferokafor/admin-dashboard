@@ -1,0 +1,89 @@
+.sidebar {
+    flex: 1;
+    min-height: 100vh;
+    border-right: 0.5px solid lightgrey;
+    background-color: white;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 3.125rem;
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2a9d8f;
+        }
+    }
+
+    hr {
+        height: 0px;
+        border: 0.5px solid lightgrey;
+    }
+
+    .center {
+        padding-left: .75rem;
+
+        ul {
+            list-style: none;
+
+            .title {
+                font-size: .65rem;
+                font-weight: 500;
+                color: #999;
+                margin: 1.5rem 0 1rem 0;
+            }
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: .5rem;
+                cursor: pointer;
+                margin: 0 0 1rem .75rem;
+
+                &:hover {
+                    background-color: #DCF6F3;
+                }
+
+                .icon {
+                    font-size: 1.125rem;
+                    color: #2a9d8f;
+                }
+
+                span {
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: #888;
+                }
+            }
+        }
+        
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        margin-left: 1.5rem;
+
+        .colorOption {
+            height: 20px;
+            width: 20px;
+            border-radius: 5px;
+            border: 1px solid #2a9d8f;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                background-color: whitesmoke;
+            }
+
+            &:nth-child(2) {
+                background-color: #333;
+            }
+        }
+    }
+}
