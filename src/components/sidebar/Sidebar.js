@@ -16,7 +16,7 @@ export default function Sidebar () {
     return (
         <div className="sidebar">
             {/* logo */}
-            <div className="top"><span className="logo">Workr</span></div>
+            <div className="top"><span className="logo">Sellr</span></div>
             <hr/>
 
             {/* options bar */}

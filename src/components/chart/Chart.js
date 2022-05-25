@@ -2,7 +2,7 @@ import './chart.scss'
 // import React, { PureComponent } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area, ReferenceArea, ReferenceDot, ReferenceLine, Brush, Customized } from 'recharts';
 
-export default function Chart () {
+export default function Chart ({aspect, title}) {
 
     const data = [
         {name: 'January', Total: 1200},
@@ -15,9 +15,9 @@ export default function Chart () {
 
     return (
         <div className="chart">
-            <h3 className='title'>Last 6 months (income)</h3>
+            <h3 className='title'>{title}</h3>
 
-            <ResponsiveContainer width="100%">
+            <ResponsiveContainer width="100%" aspect={aspect}>
                 <AreaChart width={730} height={250} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
